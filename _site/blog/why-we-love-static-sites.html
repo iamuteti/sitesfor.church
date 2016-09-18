@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Why We Love Static Sites</title>
+    <link rel="stylesheet" href="http://localhost:3000/assets/css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="canonical" href="http://localhost:3000//blog/why-we-love-static-sites.html">
+    <link rel="alternate" type="application/rss+xml" title="Affordable Church Websites" href="http://localhost:3000//feed.xml">
+  </head>
+
+  <body>
+
+    <nav class="main-nav">
+  <a href="http://localhost:3000/"><img src="http://localhost:3000//img/logo.png" width="265" height="42"></a>
+  <ul class="main-menu">
+    <li><a href="http://localhost:3000/">Overview</a></li>
+    <li><a href="http://localhost:3000//aboutus.html">About Us</a></li>
+    <li><a href="http://localhost:3000//blog-list.html">Blog</a></li>
+  </ul>
+  <ul class="action-menu">
+    <li><a href="http://localhost:3000//docs"><i class="fa fa-external-link"></i> Docs</a></li>
+    <li><a href="http://localhost:3000//signup.html" class="button hollow">Sign Up</a></li>
+  </ul> 
+  </nav>
+
+        <div class="blogPost">
+        <div class="blogPost__header">
+            <h1>Why We Love Static Sites</h1>
+            <p>Written by:  Ryan Hayden   on Jun 16, 2016 </p>
+            
+                
+                <img src="https://dl.airtable.com/PMedWKquSLvvRZ1HAig4_Static%20Website.jpg" alt="Why We Love Static Sites">
+                
+            
+        </div><!--/blogPost__header-->
+        <div class="blogPost__content">
+            <p><strong>At Sitesfor.Church we are weird and proud of it.</strong>  If you know any of us - you’d probably heartily agree, but that isn’t what I was talking about.  Our websites are weird.  There are a lot of things that make us weird, but one of the main ones is that our sites are <strong>static.</strong></p>
+
+<p>Typical sites, like  those running Wordpress, run a program on a server and whenever you click on a link, that program runs, looks in a database, and finds a page.  This is called a <em>dynamic</em> site.</p>
+
+<p>If you were to look on the server at Sitesfor.church you would find no programs.  All that is there is simple HTML and CSS files (and a little bit of javascript.)  This is called a <em>static</em> site.</p>
+
+<p>In the early days of the internet - every website was static.  But over the last ten years dynamic sites took over leaving very few static sites behind.</p>
+
+<p>Recently however, some ingenious developers have created a new kind of program called a static site generator.  Static site generators allow web creators to have most of the benefits of a dynamic site with all of the benefits of a static site.</p>
+
+<p>So what are pros and cons to static sites, and why should you as a church care?  Let me start with the cons..</p>
+
+<h1 id="cons">Cons</h1>
+
+<h2 id="no-instant-updates">No instant updates.</h2>
+
+<p>The first con is one you may never notice.  When you add a post on Wordpress or some other dynamic system - that post is live immediately.  That’s because all Wordpress has to do is put that content in a database.  On a static site - when new content is added many pages have to be completely torn down, rebuilt and then uploaded.  To add to this - on our system - we are pulling in content from an outside source (Airtable).  To do this, we run a script every hour that looks to see if their is new content on your site and if there is, rebuilds it.  Here is what that means for you: <strong>When you add a post - you’ll have to wait until the next hour before you can see it live on your site.</strong></p>
+
+<p>This is, in our opinion, the biggest tradeoff of using static sites.</p>
+
+<h2 id="certain-features-are-very-difficult-to-pull-off">Certain features are very difficult to pull off.</h2>
+
+<p>In my opinion, the second con isn’t as serious.  Certain features like blog comments and search are a little harder to implement on a static site.  To remedy this, we have to use external services (like Disqus for comments.) This in no way hinders the experience and most users would never even notice. You just have to set up Disqus.  (Which we’ll help you with if you want comments.)</p>
+
+<p>Most church websites aren’t doing comments anyways so this is probably not a big deal for most people.</p>
+
+<hr />
+
+<p>So, with these two cons why do we make static sites?  What are the…</p>
+
+<h1 id="pros">Pros</h1>
+
+<h2 id="your-site-will-be-fast">Your site will be fast.</h2>
+
+<p>This is the main benefit and boy is it a benefit.  When you visit a static site - it flies onto your screen.  Users get almost zero perceptible lag when they transition between pages.</p>
+
+<p>This provides a much better experience for your users and it will help you get higher placement on Google and other search engines.</p>
+
+<h2 id="there-is-nothing-to-break">There is nothing to break.</h2>
+
+<p>Because the webhost is just hosting static files - there is nothing to break.  I can’t tell you how many times I’ve had to fix issues with some content management system or had a site go down because some plugin didn’t like a Wordpress update.  It will never happen on a static site.</p>
+
+<p>Further, if there ever is a problem on our system, it won’t effect your live site.  When their is a problem with the build process - you and your website guests never see it - we just have to fix the problem before your content is updated.</p>
+
+<h2 id="its-much-easier-to-design-and-code">It’s much easier to design and code.</h2>
+
+<p>Right now we have four themes.  But we are planning on having many.  One of the things that makes this possible is it is very easy - almost trivial to plug a site design into our static generating system.  If you need some custom thing on your site - we can do it and probably do it quickly.</p>
+
+<h2 id="hosting-is-inexpensive">Hosting is inexpensive.</h2>
+
+<p>Because your site is just a bunch of static files, we can host it very, very inexpensively.  Just about any web host will work for a static site.  We can also host it on a network with a CDN, so it will be even faster.  Our low price point wouldn’t be possible were it not for this benefit of static hosting.</p>
+
+
+        </div><!--/blogPost__content-->
+    </div><!--/blogPost-->
+
+    <div class="footer">
+        <div class="footer__wrapper">
+        <div class="footer__wrapper__contact">
+        <img src="http://sitesfor.church/img/footerlogo.png" alt="SITESforCHURCH">
+        <p>PO Box 237 Matoon, IL 61938</p>
+<p>sitesforchurch@gmail.com</p>
+</div><!--/footer__wrapper__contact-->
+</div><!--/wrapper-->
+</div><!--/footer-->
+
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"
+integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+<script src="/js/app.js"></script>
+<script src="/js/custom.js"></script>
+
+  </body>
+
+</html>
