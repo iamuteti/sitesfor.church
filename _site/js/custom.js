@@ -134,6 +134,7 @@ $(document).ready(function () {
     // SET REVIEW INFORMATION VALUES
     setReviewInfo = function () {
         $('#theme_preview').val(f_theme.val());
+        alert(f_theme.val());
 
         $('#church_name_preview').val(f_church_name.val());
         $('#church_location_preview').val(f_church_address.val());
