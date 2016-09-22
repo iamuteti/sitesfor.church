@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Affordable Church Websites</title>
     <link rel="stylesheet" href="http://localhost:3000/assets/css/main.css">
-    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700" rel="stylesheet">
+    <!--<link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700" rel="stylesheet">-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="canonical" href="http://localhost:3000//signup.html">
     <link rel="alternate" type="application/rss+xml" title="Affordable Church Websites" href="http://localhost:3000//feed.xml">
@@ -75,7 +75,7 @@
                     <option value="virginia">Virginia Theme</option>
                     <option value="new_england">New England Theme</option>
                     <option value="proclaim">Proclaim Theme (Personal/Evangelists)</option>
-                    <option value="proclaim">Go Theme (Missionaries)</option>
+                    <option value="missionary">Go Theme (Missionaries)</option>
                 </select>
                 <p class="theme_description">California is a modern church theme, it features promoted series,
                     ministries and events on the home page. For an example visit <a
@@ -116,6 +116,7 @@
                 </fieldset>
                 <!--</form>-->
                 <button class="button" id="continue2" disabled>Choose &amp; Continue</button>
+
                 <progress max="100" value="15"></progress>
             </div><!--/form-->
         </div>
@@ -134,34 +135,7 @@
                 <h3>Service Schedule</h3>
                 <p>For each service in your service schedule, check the box and enter the name of the service and
                     the time.</p>
-
-                <form action="#">
-                    <div class="service-row">
-                        <input type="checkbox" id="service1-checkbox" checked>
-                        <input type="text" id="service1_name" placeholder="Service name...">
-                        <input type="text" id="service1_time" placeholder="Service time...">
-                    </div><!--/service-row-->
-                    <div class="service-row">
-                        <input type="checkbox" id="service2-checkbox" checked>
-                        <input type="text" id="service2_name" placeholder="Service name...">
-                        <input type="text" id="service2_time" placeholder="Service time...">
-                    </div><!--/service-row-->
-                    <div class="service-row">
-                        <input type="checkbox" id="service3-checkbox" checked>
-                        <input type="text" id="service3_name" placeholder="Service name...">
-                        <input type="text" id="service3_time" placeholder="Service time...">
-                    </div><!--/service-row-->
-                    <div class="service-row">
-                        <input type="checkbox" id="service4-checkbox" checked>
-                        <input type="text" id="service4_name" placeholder="Service name...">
-                        <input type="text" id="service4_time" placeholder="Service time...">
-                    </div><!--/service-row-->
-                    <div class="service-row">
-                        <input type="checkbox" id="service5-checkbox">
-                        <input type="text" id="service5_name" placeholder="Service name...">
-                        <input type="text" id="service5_time" placeholder="Service time...">
-                    </div><!--/service-row-->
-                </form>
+                <textarea id="service_schedule_txtarea" rows="10"></textarea>
                 <button class="button" id="continue3">Choose &amp; Continue</button>
                 <progress max="100" value="35"></progress>
             </div><!--/form-->
@@ -182,7 +156,7 @@
                 <p>This is some of the most important information on your site so we want to set it up right
                     away.</p>
 
-                <form action="#">
+                <!--<form action="#">-->
                     <input type="text" placeholder="Lead Pastor's Name" id="pastor_name" onkeyup="check_step5();"
                            required>
                     <input type="text" placeholder="Church physical address" id="church_address"
@@ -191,7 +165,7 @@
                            required>
                     <input type="text" placeholder="Church email address" id="church_email" onkeyup="check_step5();"
                            required>
-                </form>
+                <!--</form>-->
                 <button class="button" id="continue4" disabled>Choose &amp; Continue</button>
                 <progress max="100" value="60"></progress>
             </div>
@@ -235,18 +209,18 @@
                 </div><!--/viewer-->
                 <!--<div class="form">-->
                 <h2>Theme</h2>
-                <form action="#">
+                <!--<form action="#">-->
                     <select class="theme" id="theme_preview">
                         <option value="california">California Theme</option>
                         <option value="virginia">Virginia Theme</option>
                         <option value="new_england">New England Theme</option>
                         <option value="proclaim">Proclaim Theme (Personal/Evangelists)</option>
-                        <option value="proclaim">Go Theme (Missionaries)</option>
+                        <option value="missionary">Go Theme (Missionaries)</option>
                     </select>
                     <p class="theme_description">California is a modern church theme, it features promoted series,
                         ministries and events on the home page. For an example visit <a
                                 href="#">biblebaptistmattoon.org</a></p>
-                </form>
+                <!--</form>-->
                 <hr>
 
                 <h2>Church Details</h2>
@@ -265,40 +239,8 @@
                 <hr>
 
                 <h3>Service Schedule</h3>
-                <p>For each service in your service schedule, check the box and enter the name of the service and
-                    the
-                    time.</p>
-                <form action="#">
-                    <div class="service-row">
-                        <input type="checkbox" id="service1_check_preview">
-                        <input type="text" placeholder="Sunday School" value="Sunday School"
-                               id="service1_name_preview">
-                        <input type="text" placeholder="9:30 am" value="9:30 am" id="service1_time_preview">
-                    </div><!--/service-row-->
-                    <div class="service-row">
-                        <input type="checkbox" id="service2_check_preview">
-                        <input type="text" placeholder="Sunday School" value="Sunday AM Service"
-                               id="service2_name_preview">
-                        <input type="text" placeholder="10:30 am" value="10:30 am" id="service2_time_preview">
-                    </div><!--/service-row-->
-                    <div class="service-row">
-                        <input type="checkbox" id="service3_check_preview">
-                        <input type="text" placeholder="Sunday PM" value="Sunday PM" id="service3_name_preview">
-                        <input type="text" placeholder="6:00 pm" value="6:00 pm" id="service3_time_preview">
-                    </div><!--/service-row-->
-                    <div class="service-row">
-                        <input type="checkbox" id="service4_check_preview">
-                        <input type="text" placeholder="Wednesday Bible Study" value="Wednesday Bible Study"
-                               id="service4_name_preview">
-                        <input type="text" placeholder="7:00 pm" value="7:00 pm" id="service4_time_preview">
-                    </div><!--/service-row-->
-                    <div class="service-row">
-                        <input type="checkbox" id="service5_check_preview">
-                        <input type="text" placeholder="Thursday Kids Club" value="Thursday Kids Club"
-                               id="service5_name_preview">
-                        <input type="text" placeholder="6:30 pm" value="6:30 pm" id="service5_time_preview">
-                    </div><!--/service-row-->
-                </form>
+                <p>For each service in your service schedule, we've shown them below as they will appear in your website</p>
+                <div class="service-schedules" id="service-schedule-container"></div>
                 <hr>
 
                 <h3>Pastor &amp; Contact Info</h3>
@@ -345,7 +287,7 @@
             <p>The checkout is handled by Stripe, one of the world's largest credit card processors, so your
                 data is
                 safe.</p>
-            <p>The price includes the domain, setup, hosting, and one theme customization per year. <em>We
+            <p>The price includes the domain, setup, hosting, and one theme customization per year.<br><em>We
                 prefer you to pay
                 annually, so we are offering our missionary organizer (normally a $25 fee) free for those
                 who pay
@@ -412,14 +354,16 @@
         <img src="http://sitesfor.church/img/footerlogo.png" alt="SITESforCHURCH">
         <p>PO Box 237 Matoon, IL 61938</p>
 <p>sitesforchurch@gmail.com</p>
-</div><!--/footer__wrapper__contact-->
-</div><!--/wrapper-->
-</div><!--/footer-->
+</div>
+</div>
+</div>
 
-<script src="https://code.jquery.com/jquery-2.2.4.min.js"
-integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-<script src="/js/app.js"></script>
-<script src="/js/custom.js"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="http://localhost:3000/js/app.js"></script>
+<script src="http://localhost:3000/js/custom.js"></script>
+<!--<script src="/js/app.js"></script>-->
+<!--<script src="/js/custom.js"></script>-->
 
   </body>
 

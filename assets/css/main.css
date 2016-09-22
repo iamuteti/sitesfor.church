@@ -4625,9 +4625,6 @@ div.featuresGridRow {
     color: #F34235;
     font-weight: bold; }
 
-* {
-  font-family: "Lora", serif; }
-
 .signup-navigation {
   display: flex;
   flex-direction: column;
@@ -4813,17 +4810,19 @@ div.featuresGridRow {
 
 progress {
   width: 100%;
-  height: 12px;
+  height: 15px;
   -webkit-appearance: none;
   appearance: none;
-  border: 0; }
+  border: 0;
+  border-radius: 10px; }
 
 progress::-webkit-progress-bar {
   width: 100%;
-  height: 12px;
+  height: 15px;
   -webkit-appearance: none;
   appearance: none;
-  border: 0; }
+  border: 0;
+  border-radius: 10px; }
 
 progress::-webkit-progress-value {
   background-color: #D22E2E; }

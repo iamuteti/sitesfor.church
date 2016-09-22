@@ -18,21 +18,7 @@ $(document).ready(function () {
     var f_church_city = $('#name_of_city');
     var f_church_domain = $('#name_of_domain');
     var f_domain_owned = $('#checkbox_domain');
-    var f_service1_checkbox = $('#service1-checkbox');
-    var f_service1_name = $('#service1_name');
-    var f_service1_time = $('#service1_time');
-    var f_service2_checkbox = $('#service2-checkbox');
-    var f_service2_name = $('#service2_name');
-    var f_service2_time = $('#service2_time');
-    var f_service3_checkbox = $('#service3-checkbox');
-    var f_service3_name = $('#service3_name');
-    var f_service3_time = $('#service3_time');
-    var f_service4_checkbox = $('#service4-checkbox');
-    var f_service4_name = $('#service4_name');
-    var f_service4_time = $('#service4_time');
-    var f_service5_checkbox = $('#service5-checkbox');
-    var f_service5_name = $('#service5_name');
-    var f_service5_time = $('#service5_time');
+    var f_service_schedule = $('#service_schedule_txtarea');
     var f_pastor_name = $('#pastor_name');
     var f_church_address = $('#church_address');
     var f_church_phone = $('#church_phone');
@@ -97,6 +83,23 @@ $(document).ready(function () {
     });
     // GO TO STEP4
 
+    // STEP4
+    var placeholder = 'Example:\nSunday School - 8:00A,\nSunday Morning - 10:30AM,\nWednesday Bible Study - 4:00PM,\nNOTE: Every comma indicates the start of a new schedule. Please follow this format.';
+    $('#service_schedule_txtarea').val(placeholder);
+
+    $('#service_schedule_txtarea').focus(function () {
+        if ($(this).val() === placeholder) {
+            $(this).val('');
+        }
+    });
+
+    $('#service_schedule_txtarea').blur(function () {
+        if ($(this).val() === '') {
+            $(this).val(placeholder);
+        }
+    });
+    // STEP4
+
     // GO TO STEP5
     $('#continue3').click(function () {
         $('#step4').fadeOut(1000);
@@ -134,7 +137,6 @@ $(document).ready(function () {
     // SET REVIEW INFORMATION VALUES
     setReviewInfo = function () {
         $('#theme_preview').val(f_theme.val());
-        alert(f_theme.val());
 
         $('#church_name_preview').val(f_church_name.val());
         $('#church_location_preview').val(f_church_address.val());
@@ -143,35 +145,14 @@ $(document).ready(function () {
             $('#Domain_owned_preview').prop('checked', true);
         }
 
-        if ($('#service1-checkbox').is(':checked')) {
-            $('#service1_check_preview').prop('checked', true);
-        }
-        $('#service1_name_preview').val(f_service1_name.val());
-        $('#service1_time_preview').val(f_service1_time.val());
+        // CAST SERVICE SCHEDULE INTO AN ARRAY
+        var service_array = f_service_schedule.val().split(',');
 
-        if ($('#service2-checkbox').is(':checked')) {
-            $('#service2_check_preview').prop('checked', true);
-        }
-        $('#service2_name_preview').val(f_service2_name.val());
-        $('#service2_time_preview').val(f_service2_time.val());
-
-        if ($('#service3-checkbox').is(':checked')) {
-            $('#service3_check_preview').prop('checked', true);
-        }
-        $('#service3_name_preview').val(f_service3_name.val());
-        $('#service3_time_preview').val(f_service3_time.val());
-
-        if ($('#service4-checkbox').is(':checked')) {
-            $('#service4_check_preview').prop('checked', true);
-        }
-        $('#service4_name_preview').val(f_service3_name.val());
-        $('#service4_time_preview').val(f_service4_time.val());
-
-        if ($('#service5-checkbox').is(':checked')) {
-            $('#service5_check_preview').prop('checked', true);
-        }
-        $('#service5_name_preview').val(f_service5_name.val());
-        $('#service5_time_preview').val(f_service5_time.val());
+        // LOOP THROUGH THE ARRAY AND DISPLAY THE VALUES FOR REVIEW
+        service_array.forEach(function (v, k) {
+            $("#service-schedule-container").append("<p>" + v + "</p>");
+        });
+        // LOOP THROUGH THE ARRAY AND DISPLAY THE VALUES FOR REVIEW
 
         $('#PastorName_preview').val(f_pastor_name.val());
         $('#ChurchAddress_preview').val(f_church_address.val());
