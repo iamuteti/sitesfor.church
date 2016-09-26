@@ -6,6 +6,7 @@ var check_step3;
 var check_step5;
 var check_step6;
 var setReviewInfo;
+var sendToAirbase;
 // CONTROL SIGNUP PROCESS
 $(document).ready(function () {
 
@@ -46,8 +47,8 @@ $(document).ready(function () {
 
     // GOT TO STEP2
     continue0.click(function () {
-        $('#step1').fadeOut(1000);
-        $('#step2').fadeIn(1000);
+        $('#step1').fadeOut();
+        $('#step2').fadeIn(600);
     });
     // GOT TO STEP2
 
@@ -61,8 +62,8 @@ $(document).ready(function () {
 
     // GOT TO STEP3
     $('#continue1').click(function () {
-        $('#step2').fadeOut(1000);
-        $('#step3').fadeIn(1000);
+        $('#step2').fadeOut();
+        $('#step3').fadeIn(600);
     });
     // GOT TO STEP3
 
@@ -78,13 +79,13 @@ $(document).ready(function () {
 
     // GO TO STEP4
     $('#continue2').click(function () {
-        $('#step3').fadeOut(1000);
-        $('#step4').fadeIn(1000);
+        $('#step3').fadeOut();
+        $('#step4').fadeIn(600);
     });
     // GO TO STEP4
 
     // STEP4
-    var placeholder = 'Example:\nSunday School - 8:00A,\nSunday Morning - 10:30AM,\nWednesday Bible Study - 4:00PM,\nNOTE: Every comma indicates the start of a new schedule. Please follow this format.';
+    var placeholder = 'Enter your schedule here...';
     $('#service_schedule_txtarea').val(placeholder);
 
     $('#service_schedule_txtarea').focus(function () {
@@ -102,8 +103,8 @@ $(document).ready(function () {
 
     // GO TO STEP5
     $('#continue3').click(function () {
-        $('#step4').fadeOut(1000);
-        $('#step5').fadeIn(1000);
+        $('#step4').fadeOut();
+        $('#step5').fadeIn(600);
     });
     // GO TO STEP5
 
@@ -119,8 +120,8 @@ $(document).ready(function () {
 
     // GO TO STEP6
     $('#continue4').click(function () {
-        $('#step5').fadeOut(1000);
-        $('#step6').fadeIn(1000);
+        $('#step5').fadeOut();
+        $('#step6').fadeIn(600);
     });
     // GO TO STEP6
 
@@ -168,18 +169,50 @@ $(document).ready(function () {
     // GO TO STEP7
     $('#continue5').click(function () {
         setReviewInfo();
-        $('#step6').fadeOut(1000);
-        $('#step7').fadeIn(1000);
+        sendToAirbase();
+        $('#step6').fadeOut();
+        $('#step7').fadeIn(600);
     });
     // GO TO STEP7
 
     // GOT TO STEP8
     $('#continue6').click(function () {
-        $('#step7').fadeOut(1000);
-        $('#step8').fadeIn(1000);
+        $('#step7').fadeOut();
+        $('#step8').fadeIn(600);
     });
     // GOT TO STEP8
 
+    sendToAirbase = function () {
+        var data = {};
+        data.username = f_username.val();
+        data.email = f_email.val();
+        data.password = f_password.val();
+        data.theme = f_theme.val();
+        data.churchName = f_church_name.val();
+        data.churchCity = f_church_city.val();
+        data.churchDomain = f_church_domain.val();
+        data.churchDomainOwned = f_domain_owned.is(':checked');
+        data.serviceSchedule = f_service_schedule.val();
+        data.pastorName = f_pastor_name.val();
+        data.churchAddress = f_church_address.val();
+        data.churchPhone = f_church_phone.val();
+        data.churchEmail = f_church_email.val();
+        data.webLeadName = f_web_lead_name.val();
+        data.webLeadPhone = f_web_lead_phone.val();
+        data.webLeadEmail = f_web_lead_email.val();
+        data.bestToCall = f_best_time_call.val();
+
+        $.ajax({
+            type: 'POST',
+            data: JSON.stringify(data),
+            contentType: 'application/json',
+            url: 'http://localhost:1993/air',
+            success: function (data) {
+                console.log('success');
+                console.log(JSON.stringify(data));
+            }
+        });
+    }
 
 });
 // CONTROL SIGNUP PROCESS
