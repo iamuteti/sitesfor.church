@@ -4914,6 +4914,10 @@ progress::-webkit-progress-value {
 .form .button {
   background-color: #F34235; }
 
+.hint-schedule {
+  color: #333333;
+  font-style: italic; }
+
 .srdocs {
   display: flex;
   max-width: 1200px; }

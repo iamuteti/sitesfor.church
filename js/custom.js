@@ -147,7 +147,7 @@ $(document).ready(function () {
         }
 
         // CAST SERVICE SCHEDULE INTO AN ARRAY
-        var service_array = f_service_schedule.val().split(',');
+        var service_array = f_service_schedule.val().split('\n');
 
         // LOOP THROUGH THE ARRAY AND DISPLAY THE VALUES FOR REVIEW
         service_array.forEach(function (v, k) {
@@ -183,6 +183,7 @@ $(document).ready(function () {
     // GOT TO STEP8
 
     sendToAirbase = function () {
+        alert(f_service_schedule.val());
         var data = {};
         data.username = f_username.val();
         data.email = f_email.val();
@@ -206,7 +207,7 @@ $(document).ready(function () {
             type: 'POST',
             data: JSON.stringify(data),
             contentType: 'application/json',
-            url: 'http://localhost:1993/air',
+            url: 'https://siteforchurch-backend-nodejs.herokuapp.com/air',
             success: function (data) {
                 console.log('success');
                 console.log(JSON.stringify(data));

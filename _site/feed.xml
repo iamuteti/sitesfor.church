@@ -2,13 +2,13 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Affordable Church Websites</title>
-    <description>Sitesfor.church makes affordable church websites built for the needs of the 90% of churches with less than 200 members.   You won't find a professional solution that is more affordable or easier to use.  We also are deliberate about giving jobs to Bible college students and other aspiring pastors.
+    <description>Sitesfor.church makes affordable church websites built for the needs of the 90% of churches with less than 200 members.   You won&#39;t find a professional solution that is more affordable or easier to use.  We also are deliberate about giving jobs to Bible college students and other aspiring pastors.
 </description>
     <link>http://localhost:3000//</link>
     <atom:link href="http://localhost:3000//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 26 Sep 2016 18:21:43 +0300</pubDate>
-    <lastBuildDate>Mon, 26 Sep 2016 18:21:43 +0300</lastBuildDate>
-    <generator>Jekyll v3.2.1</generator>
+    <pubDate>Wed, 28 Sep 2016 06:39:14 +0300</pubDate>
+    <lastBuildDate>Wed, 28 Sep 2016 06:39:14 +0300</lastBuildDate>
+    <generator>Jekyll v3.0.1</generator>
     
       <item>
         <title>Sitesfor.Church 101</title>
@@ -16,12 +16,10 @@
 
 &lt;p&gt;At Sitesfor.church, we are dedicated to giving you the easiest to update church website you could possibly have.  But every website is going to have some learning curve.  We’ve learned over the years that often, in an attempt to make websites easier for nontechnical people, you can actually make things more complicated.&lt;/p&gt;
 
-&lt;p&gt;We think we’ve found the best mix of ease of use and necessary complexity.  Many of our clients who have used other more traditional website setups (like Wordpress) rave about how easy to use Sitesfor.church is.  The tradeoff is we ask you to learn three skills:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Airtable&lt;/li&gt;
-  &lt;li&gt;Markdown&lt;/li&gt;
-  &lt;li&gt;Image Creation&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;We think we’ve found the best mix of ease of use and necessary complexity.  Many of our clients who have used other more traditional website setups (like Wordpress) rave about how easy to use Sitesfor.church is.  The tradeoff is we ask you to learn three skills:
+* Airtable
+* Markdown
+* Image Creation&lt;/p&gt;
 
 &lt;h2 id=&quot;airtable&quot;&gt;Airtable&lt;/h2&gt;
 
@@ -45,54 +43,58 @@
 
 &lt;p&gt;At it’s most basic, Markdown looks like this:&lt;/p&gt;
 
-&lt;div class=&quot;language-markdown highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
-&lt;span class=&quot;gh&quot;&gt;# Basic Stuff&lt;/span&gt;
+&lt;p&gt;```markdown&lt;/p&gt;
 
-&lt;span class=&quot;gu&quot;&gt;## Paragraphs, bold and italic &lt;/span&gt;
+&lt;h1 id=&quot;basic-stuff&quot;&gt;Basic Stuff&lt;/h1&gt;
 
-Paragraphs are just paragraphs.  They are separated by a space.
+&lt;h2 id=&quot;paragraphs-bold-and-italic&quot;&gt;Paragraphs, bold and italic&lt;/h2&gt;
 
-This is a new paragraph.  You make text &lt;span class=&quot;gs&quot;&gt;**bold**&lt;/span&gt; by placing two asterisks around it.  You make text &lt;span class=&quot;ge&quot;&gt;*italicized*&lt;/span&gt; by placing one set of asterisks around it.  &lt;span class=&quot;ge&quot;&gt;*This whole sentence is italicized.*&lt;/span&gt; 
+&lt;p&gt;Paragraphs are just paragraphs.  They are separated by a space.&lt;/p&gt;
 
-&lt;span class=&quot;gh&quot;&gt;# Level one headings start with a single hash (or number symbol) and a space then text.  Like this.&lt;/span&gt;
-&lt;span class=&quot;gu&quot;&gt;## This is a level two heading.&lt;/span&gt;
-&lt;span class=&quot;gu&quot;&gt;### And level three.&lt;/span&gt;
+&lt;p&gt;This is a new paragraph.  You make text &lt;strong&gt;bold&lt;/strong&gt; by placing two asterisks around it.  You make text &lt;em&gt;italicized&lt;/em&gt; by placing one set of asterisks around it.  &lt;em&gt;This whole sentence is italicized.&lt;/em&gt;&lt;/p&gt;
 
-&lt;span class=&quot;gu&quot;&gt;## Lists&lt;/span&gt;
+&lt;h1 id=&quot;level-one-headings-start-with-a-single-hash-or-number-symbol-and-a-space-then-text--like-this&quot;&gt;Level one headings start with a single hash (or number symbol) and a space then text.  Like this.&lt;/h1&gt;
+&lt;p&gt;## This is a level two heading.
+### And level three.&lt;/p&gt;
 
-Bulleted lists start with an asterisk and a space.  Like this:
-&lt;span class=&quot;p&quot;&gt;
-*&lt;/span&gt; Item one.
-&lt;span class=&quot;p&quot;&gt;*&lt;/span&gt; Item two.
-&lt;span class=&quot;p&quot;&gt;*&lt;/span&gt; Item three.
+&lt;h2 id=&quot;lists&quot;&gt;Lists&lt;/h2&gt;
 
-Numbered lists are similar, but they start with a number, a period, then a space.  Like this:
-&lt;span class=&quot;p&quot;&gt;
-1.&lt;/span&gt; Item one
-&lt;span class=&quot;p&quot;&gt;2.&lt;/span&gt; Item two
-&lt;span class=&quot;p&quot;&gt;3.&lt;/span&gt; Item three&lt;span class=&quot;sb&quot;&gt;
+&lt;p&gt;Bulleted lists start with an asterisk and a space.  Like this:&lt;/p&gt;
 
+&lt;ul&gt;
+  &lt;li&gt;Item one.&lt;/li&gt;
+  &lt;li&gt;Item two.&lt;/li&gt;
+  &lt;li&gt;Item three.&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;/span&gt;&lt;span class=&quot;gh&quot;&gt;# Advanced Stuff &lt;/span&gt;
+&lt;p&gt;Numbered lists are similar, but they start with a number, a period, then a space.  Like this:&lt;/p&gt;
 
-&lt;span class=&quot;gu&quot;&gt;## Quotes&lt;/span&gt;
+&lt;ol&gt;
+  &lt;li&gt;Item one&lt;/li&gt;
+  &lt;li&gt;Item two&lt;/li&gt;
+  &lt;li&gt;Item three&lt;/li&gt;
+&lt;/ol&gt;
 
-Quotes can be inserted into your text by starting the line with a greater than sign and a space.  (I often use this for Bible verses) Like this:
-&lt;span class=&quot;gt&quot;&gt;
-&amp;gt; For God so loved the world that he gave his only begotten son...(John 3:16a)&lt;/span&gt;
+&lt;h1 id=&quot;advanced-stuff&quot;&gt;Advanced Stuff&lt;/h1&gt;
 
-&lt;span class=&quot;gu&quot;&gt;## Links&lt;/span&gt;
+&lt;h2 id=&quot;quotes&quot;&gt;Quotes&lt;/h2&gt;
 
-To insert a link in a paragraph, simply place the link text in square brackets, immediately followed by the URL in parenthesis.  Like this &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;link text&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;](&lt;/span&gt;&lt;span class=&quot;sx&quot;&gt;http://URLhere.com&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;.&lt;span class=&quot;sb&quot;&gt;
+&lt;p&gt;Quotes can be inserted into your text by starting the line with a greater than sign and a space.  (I often use this for Bible verses) Like this:&lt;/p&gt;
 
+&lt;blockquote&gt;
+  &lt;p&gt;For God so loved the world that he gave his only begotten son…(John 3:16a)&lt;/p&gt;
+&lt;/blockquote&gt;
 
-&lt;/span&gt;&lt;span class=&quot;gu&quot;&gt;## Images&lt;/span&gt;
-Images are exactly like links, only they start with an exclamation point.  Like this:
+&lt;h2 id=&quot;links&quot;&gt;Links&lt;/h2&gt;
 
-&lt;span class=&quot;p&quot;&gt;![&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;description&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;](&lt;/span&gt;&lt;span class=&quot;sx&quot;&gt;http://linktoimagefile.jpg&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; 
+&lt;p&gt;To insert a link in a paragraph, simply place the link text in square brackets, immediately followed by the URL in parenthesis.  Like this &lt;a href=&quot;http://URLhere.com&quot;&gt;link text&lt;/a&gt;.&lt;/p&gt;
 
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;h2 id=&quot;images&quot;&gt;Images&lt;/h2&gt;
+&lt;p&gt;Images are exactly like links, only they start with an exclamation point.  Like this:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://linktoimagefile.jpg&quot; alt=&quot;description&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;```&lt;/p&gt;
 
 &lt;hr /&gt;
 
@@ -153,7 +155,7 @@ Images are exactly like links, only they start with an exclamation point.  Like 
       </item>
     
       <item>
-        <title>Airtable for a website?  Why you'll love it.</title>
+        <title>Airtable for a website?  Why you&#39;ll love it.</title>
         <description>&lt;p&gt;Recently, at Sitesfor.church, we made the decision to use &lt;a href=&quot;http://airtable.com&quot;&gt;Airtable&lt;/a&gt; as the backbone of our church websites.  Airtable is an online database app (if Google Sheets and Microsoft Access had a baby it would look like Airtable.)  Using an app like this is a radical move - as far as we know no other web design company is doing - but we think you are going to love it.&lt;/p&gt;
 
 &lt;p&gt;Why?  We thought of ten reasons why you’ll like it.&lt;/p&gt;
@@ -252,13 +254,11 @@ Images are exactly like links, only they start with an exclamation point.  Like 
 
 &lt;p&gt;James Graves started &lt;a href=&quot;http://www.southwestern.com/Southwestern-History.aspx?&quot;&gt;Southwestern Publishing&lt;/a&gt; company and came up with the novel idea of employing college students to sell books door to door.  Southwestern (Now known as “The Southwestern Company”) is still around today and is widely recognized as one of the best leadership training programs in the country.  Several state governors, fortune 500 CEOs, and even pastor/author Max Lucado (as well as more than 100,000 others) spent their summers working for Southwestern and credit it as a huge part of their life.&lt;/p&gt;
 
-&lt;p&gt;It’s our goal that Sitesfor.church will provide a similar benefit to those who work for us as site reps.  By working with us they will learn:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Sales skills.&lt;/li&gt;
-  &lt;li&gt;People skills.&lt;/li&gt;
-  &lt;li&gt;Technology and design skills.
-They will also get to befriend and encourage pastors all over the country and learn about the ministry as they help each of these churches set up their ministry websites.&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;It’s our goal that Sitesfor.church will provide a similar benefit to those who work for us as site reps.  By working with us they will learn:
+* Sales skills.
+* People skills.
+* Technology and design skills.
+They will also get to befriend and encourage pastors all over the country and learn about the ministry as they help each of these churches set up their ministry websites.&lt;/p&gt;
 
 &lt;p&gt;So not only will they get a good paying job they can do while in college, they will learn new skills and gain invaluable experience that they can bring with them into the ministry.  We think it’s a win/win/win: churches benefit with a great church website, college students benefit by earning and learning and the cause of Christ benefits as both of these things bear fruit.&lt;/p&gt;
 </description>
